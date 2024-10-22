@@ -1,0 +1,70 @@
+/*
+Theme Name: Neve Child
+Template: neve
+Version: 1.0
+Description: Thème enfant basé sur Neve pour le projet Planty
+Author: Pauline Sou
+Author URI: https://themeisle.com
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: boisson energisante, naturelle
+Text Domain: neve-child
+*/
+/* Couleur de fond du header */
+/* Mise en page menu de navigation */
+
+.menu-item-443:hover, .admin:hover{
+	font-weight:700;
+}
+
+body .nav-ul > li {
+	margin: 0;
+  	padding: 0 calc(var(--spacing)/ 2);
+}
+
+#menu-item-477 > a{
+	color: white;
+}
+
+.menu-item-477{
+	order: 3;
+	background-color: #DC9F96;
+	font-weight: 700;
+}
+
+.menu-item-477:hover{
+	background-color:#c02e43;
+}
+
+.builder-item, .has-nav{
+	margin: 0px!important;
+}
+
+.admin a{
+	width: 50px;
+}
+
+/* Mise en page du bouton formulaire page "nous rencontrer" */
+.button-contact{
+    text-align: center;
+}
+
+#envoyer{
+	height: 55px;
+	width: 198px;
+}
+
+#envoyer:hover{
+	background-color: #c02e43;
+}
+
+.wpcf7-spinner{
+    display: none;
+}
+
+/* Mise en page du selecteur page "commander" */
+
+input[type=number] {
+  width : 51px;
+  height : 54px;
+}
