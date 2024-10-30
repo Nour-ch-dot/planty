@@ -1,0 +1,15 @@
+/**
+Theme Name: Planty
+Author: Anne Lamy
+Author URI: http://wpastra.com/about/
+Description: Planty est un théme enfant de Astra, crée pour l'élaboration d'un exercice de cour sur la personnalisation d'un thème Wordpress avec html, css et php.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: planty
+Tags: boissons énergisantes plantes 100% natuelles frais fruité boots énergie
+Template: astra
+*/
+body{
+    background-color: black;
+}
