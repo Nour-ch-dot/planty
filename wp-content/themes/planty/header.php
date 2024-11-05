@@ -30,22 +30,24 @@ if ( apply_filters( 'astra_header_profile_gmpg_link', true ) ) {
 ?>
 <?php wp_head(); ?>
 <header class="header">
-    <div id="logo">
-        <?php if(has_custom_logo()) : ?>
-            <?php the_custom_logo(); ?>
-        <?php endif; ?>
+    <div class="container">
+        <div id="logo">
+            <?php if(has_custom_logo()) : ?>
+                <?php the_custom_logo(); ?>
+            <?php endif; ?>
+        </div>
+
+        <nav class="menu">
+            <?php
+            wp_nav_menu(array(
+                'theme_location' => 'primary', // Utiliser "primary" pour correspondre à l'identifiant défini
+                'menu_class' => 'menu-principal', // Classe CSS pour la stylisation.
+            ));
+            ?>
+        </nav>
     </div>
-
-    <nav class="menu">
-        <?php wp_nav_menu( array( 
-            'theme_location' => 'header-menu'
-        )); ?>
-    </nav>
-
-    <form method="get" action="commander.php">
-        <button class="cta-head" type="submit">Commander</button>
-    </form>
 </header>
+
 
 <?php astra_head_bottom(); ?>
 </head>

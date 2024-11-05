@@ -1,112 +1,96 @@
-body * {
+/* Styles généraux */
+body {
     font-family: 'syne', sans-serif;
     font-weight: 400;
+    background-color: #FFF;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
     max-width: 1440px;
     margin: auto;
-    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
 
 /* HEADER */
-
-.header
-{
+.header {
     display: flex;
-    background-color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* Ajuste le padding pour réduire l'espace */
+    background-color: #FFF;
 }
 
-#logo
-{
-    margin-left: 45px;
-    height: 80px;
+#logo {
     display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-#logo .custom-logo
-{
-    height: 40px;
-    width: 202px;
-    object-fit: cover;
+#logo .custom-logo {
+    height: auto;
+    width: auto;
+    max-height: 30px; /* Ajuste la hauteur pour correspondre à celle du menu */
+    margin-right: 600px;
 }
 
-nav
-{
-    margin-right: 0;
-}
-
-nav a 
-{
-    outline: none;
-    text-decoration: none;
-    color: black;
-    padding-right: 100px;
-    margin-bottom: 200px;
-}
-
-nav ul
-{
+/* Menu principal */
+.menu-principal {
     display: flex;
+    align-items: center;
     list-style-type: none;
+    gap: 50px;
     padding: 0;
     margin: 0;
-    gap:20px;
 }
 
-.menu-item a
-{
-    height: 80px;
-    width: 200px;
-    background: none;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    
+.menu-principal li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 10px 15px; /* Ajuste l'espacement autour des liens */
 }
 
-/* menu commander */
-.cta-head{
-    color:#FFFFFF;
-    width: 236px;
-    height: 80px;
-    background:#DC9F96;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: 800px;
-    margin-right: 10px;
+/* Style spécifique pour le bouton "Commander" */
+.menu-principal li:last-child a {
+    color: #FFFFFF;
+    background-color: #DC9F96;
+    padding: 30px 25px;
+    border-radius:1px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: -21px;
 }
 
-li.menu-item-32 span
-{
-    font-weight: 700 !important;
-    font-size: 16px;
+.menu-principal li:last-child a:hover {
+    background-color: #c87a70;
 }
 
-.cta-head:active {
-    background: #f402b4; 
-    color: #FFFFFF; 
-}
-
-
-/* menu admin */
-li.menu-item a:hover 
-{
+/* Effet de survol pour tous les liens du menu sauf "Commander" */
+.menu-principal li:not(:last-child) a:hover {
     font-weight: 700;
-    font-size: 13px;
 }
 
+/* FOOTER */
 #footer {
+    background-color: #FFF; /* Couleur de fond du footer */
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 10px;
+}
 
-        margin-top: 80px;
-        display: flex;
-        text-align: center;
-    }
-    #footer a {
-        color:black; /* Couleur du lien en blanc */
-        text-decoration: none;
-    }
-    
-    
-   
+#footer a {
+    color: black;
+    text-decoration: none;
+}
+
+
+#footer a:hover {
+    text-decoration: underline; /* Effet au survol */
+}
