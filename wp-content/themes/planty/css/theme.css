@@ -63,7 +63,7 @@ body {
     border-radius:1px;
     font-weight: bold;
     text-align: center;
-    margin-right: -21px;
+    margin-right: -38px;
 }
 
 .menu-principal li:last-child a:hover {
@@ -73,6 +73,65 @@ body {
 /* Effet de survol pour tous les liens du menu sauf "Commander" */
 .menu-principal li:not(:last-child) a:hover {
     font-weight: 700;
+}
+
+/* Style général de la page d'accueil */
+.page-accueil {
+    background-color: #F5EDE0; /* Couleur de fond de la page */
+}
+
+/* Style du titre principal */
+.page-accueil .titre-principal {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: #2F8D46; /* Couleur verte */
+    margin-bottom: 20px;
+}
+
+/* Style de l'image de la canette */
+.page-accueil .image-canette {
+    max-width: 300px;
+    display: block;
+    margin: 30px auto;
+}
+
+/* Style des éléments décoratifs */
+.page-accueil .feuilles {
+    position: absolute;
+    width: 150px;
+    z-index: -1; /* Derrière l'image de la canette */
+}
+
+/* Positionnement des feuilles */
+.page-accueil .feuilles.gauche {
+    left: 20%;
+    top: 30%;
+}
+
+.page-accueil .feuilles.droite {
+    right: 20%;
+    top: 30%;
+}
+
+/* Style du bouton de commande */
+.page-accueil .bouton-commande {
+    background-color: #D39A84; /* Couleur rose clair */
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.page-accueil .bouton-commande:hover {
+    background-color: #C38470; /* Couleur plus foncée au survol */
 }
 
 
@@ -114,6 +173,27 @@ body {
     display: block !important;
 }
 
+.lien-admin a {
+    display: inline-block;
+    background-color: #fdfdfd; /* Couleur de fond */
+    color: #0b0b0b; /* Couleur du texte */
+    padding: 10px 20px; /* Espacement interne */
+    font-weight: bold; /* Texte en gras */
+    font-size: 14px; /* Taille de la police */
+    text-decoration: none; /* Supprime le soulignement */
+    margin-left: 15px; /* Espace à gauche */
+    box-shadow: none; /* Supprime l'ombre */
+    cursor: pointer; /* Change le curseur en main */
+}
+
+.lien-admin a:hover {
+    background-color: #D39A84; /* Couleur au survol */
+}
+
+
+.lien-admin a:hover {
+    background-color: #fefdfd; /* Couleur au survol */
+}
 
 
 

@@ -1,62 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>planty</title>
-</head>
-<body>
-    <header class="header">
-        <a href="index.html"><img class="logo" src="./images/logo.png" alt="image du logo Planty"/></a>
-        <nav class="menu">
-           <div class="nav-link">
-              <a href="rencontre.html">Nous rencontrer</a>
-              <a class="admin" href="#">Admin</a>
-              <form method="get" action="commander.html">
-                 <button class="cta-head" type="submit">Commander</button>
-             </form>
-           </div>
-        </nav>
-     </header>
-     <main>
-        <section class="boisson">
-           <h1 class="Tgr">
-              BOISSON ÉNERGISANTE 100% NATURELLE
-           </h1>
-           <img class="can" src="./images/canetteaccueil.png" alt="image de la boissons énergisante" />
-        </section>
-        <div class="arrondi"></div>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="./css/style.css" />
+      <title>Planty</title>
+   </head>
+   <body class="main-container">
+      <!--Modifier la résolution une fois tout fini -->
+      <div>
+         <header class="backblc">
+            <a href="index.html"><img class="logo" src="./images/logo.png" alt="image du logo Planty"/></a>
+            <nav class="menu">
+               <div class="nav-link">
+                  <a href="rencontre.html">Nous rencontrer</a>
+                  <a class="admin" href="#">Admin</a>
+                  <form method="get" action="commander.html">
+                     <button class="cta-head" type="submit">Commander</button>
+                 </form>
+               </div>
+            </nav>
+         </header>
+         <main>
+            <section class="boisson">
+               <h1 class="Tgr">
+                  BOISSON ÉNERGISANTE 100% NATURELLE
+               </h1>
+               <img class="can" src="./images/canetteaccueil.png" alt="image de la boissons énergisante" />
+            </section>
+            <div class="arrondi"></div>
 
-        <section class="backblc energie">
-           <h3 class="Titre">L'énergie des plantes</h3>
-           <p class="intro2">
-              Planty, c’est la première boisson
-              énergisante composée à 100 % de produits naturels.
-              Avec son goût frais et fruité, retrouvez votre
-              énergie grâce aux plantes riches en vitamine B2,
-              à n’importe quel moment de la journée.
-           </p>
-        </section>
-        <section class="gout">
-            <h2 class="Tro">LES GOÛTS</h2>
-            <p>Nous avons une saveur pour chaque moment de votre journée.</p>
-            <div class="container">
-               <div class="fruits">
-                  <img src="./images/fraiseimg.png" alt="image du parfum fraise"/>
-                  <div class="texte">FRAISE</div>
+            <section class="backblc energie">
+               <h3 class="Tgr">L'énergie des plantes</h3>
+               <p class="intro2">
+                  Planty, c’est la première boisson
+                  énergisante composée à 100 % de produits naturels.
+                  Avec son goût frais et fruité, retrouvez votre
+                  énergie grâce aux plantes riches en vitamine B2,
+                  à n’importe quel moment de la journée.
+               </p>
+            </section>
+
+            <section class="gout">
+               <h2 class="Tro">LES GOÛTS</h2>
+               <p>Nous avons une saveur pour chaque moment de votre journée.</p>
+               <div class="container">
+                  <div class="fruits">
+                     <img src="./images/fraiseimg.png" alt="image du parfum fraise"/>
+                     <div class="texte">FRAISE</div>
+                  </div>
+                  <div class="fruits">
+                     <img src="./images/pamplemousseimg.png" alt="image du parfum pamplemousse"/>
+                     <div class="texte">PAMPLE<br />MOUSSE</div>
+                  </div>
+                  <div class="fruits">
+                     <img src="./images/framboiseimg.png" alt="image du parfum framboise"/>
+                     <div class="texte">FRAM<br />BOISE</div>
+                  </div>
+                  <div class="fruits">
+                     <img src="./images/citronimg.png" alt="image du parfum citron"/>
+                     <div class="texte">CITRON</div>
+                  </div>
                </div>
-               <div class="fruits">
-                  <img src="./images/pamplemousseimg.png" alt="image du parfum pamplemousse"/>
-                  <div class="texte">PAMPLE<br />MOUSSE</div>
+               <form method="get" action="http://localhost/planty/commander/">
+                  <button class="cta" type="submit">Commander</button>
+              </form>
+            </section>
+
+            <section class="backblc">
+               <h2 class="Tgr cqep">CE QU'ILS EN PENSENT</h2>
+               <div class="comment">
+                  <div class="row-client">
+                     <img class="img-client" src="./images/fatiha.png" alt="image du client"/>
+                     <div class="client">
+                        <h2 class="Tgr fontW">Fatiha</h2>
+                        <p>La meilleure boisson énergisante disponible sur le marché !</p>
+                     </div>
+                  </div>
+                  <div class="row-client">
+                     <img class="img-client" src="./images/vero.png" alt="image du client"/>
+                     <div class="client">
+                        <h2 class="Tgr fontW">Vero</h2>
+                        <p>Frais & fruité c’est parfait pour accompagner le goûter.</p>
+                     </div>
+                  </div>
+                  <div class="row-client">
+                     <img class="img-client" src="./images/marc.png" alt="image du client"/>
+                     <div class="client">
+                        <h2 class="Tgr fontW">Marc</h2>
+                        <p>Un boost d’énergie sans produits chimiques, un vrai plus dans ma journée.</p>
+                     </div>
+                  </div>
                </div>
-               <div class="fruits">
-                  <img src="./images/framboiseimg.png" alt="image du parfum framboise"/>
-                  <div class="texte">FRAM<br />BOISE</div>
-               </div>
-               <div class="fruits">
-                  <img src="./images/citronimg.png" alt="image du parfum citron"/>
-                  <div class="texte">CITRON</div>
-               </div>
-            </div>
-</body>
+               <div class="cans"></div>
+            </section>
+         </main>
+         <footer class="backblc foot">
+            <a href="#">Mentions légales</a>
+         </footer>
+      </div>
+   </body>
 </html>

@@ -5,20 +5,23 @@ function theme_enqueue_styles()
     wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
     wp_enqueue_style('theme-style', get_stylesheet_directory_uri() . '/css/theme.css', array(), filemtime(get_stylesheet_directory() . '/css/theme.css'));
 } 
-// CREER UN EMPLACEMENT POUR AFFICHER LE MENU
-function header_menu()
-{
-    register_nav_menu('header', __('menu header'));
-}
-add_action('init', 'header_menu');
-
-
-// AFFICHE LE MENU LORSQUE L'UTILISATEUR EST CONNECTE
-function add_admin_link($items, $args)
-{
-    if (is_user_logged_in() && $args->theme_location == 'header') {
-        $items .= '<li class="admin-menu"><a href="' . get_admin_url() . '">Admin</a></li>';
+function ajouter_lien_admin_pour_utilisateurs_connectes($items, $args) {
+    if (is_user_logged_in() && $args->theme_location == 'primary') {
+        // Crée le lien "Admin"
+        $lien_admin = '<li class="menu-item lien-admin"><a href="' . admin_url() . '">Admin</a></li>';
+        
+        // Trouve la position du lien "Commander" et place le lien "Admin" avant
+        $items_array = explode('</li>', $items); // Sépare le menu en items individuels
+        foreach ($items_array as $key => $item) {
+            if (strpos($item, 'Commander') !== false) {
+                array_splice($items_array, $key, 0, $lien_admin); // Insère "Admin" avant "Commander"
+                break;
+            }
+        }
+        
+        // Reconstruit le menu
+        $items = implode('</li>', $items_array) . '</li>';
     }
     return $items;
 }
-add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
+add_filter('wp_nav_menu_items', 'ajouter_lien_admin_pour_utilisateurs_connectes', 10, 2);
