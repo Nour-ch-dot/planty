@@ -59,11 +59,12 @@ body {
 .menu-principal li:last-child a {
     color: #FFFFFF;
     background-color: #DC9F96;
-    padding: 30px 25px;
+    padding: 35px 60px;
+    padding-left: 40%;
+    margin-right: 10%;
     border-radius:1px;
     font-weight: bold;
     text-align: center;
-    margin-right: -38px;
 }
 
 .menu-principal li:last-child a:hover {
@@ -129,57 +130,6 @@ body {
     top: 30%;
 }
 
-/* Style du bouton de commande */
-.page-accueil .bouton-commande {
-    background-color: #D39A84; /* Couleur rose clair */
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 10px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    margin-top: 20px;
-    text-transform: uppercase;
-    transition: background-color 0.3s;
-    display: inline-block;
-    margin-right: 5px;
-}
-
-.page-accueil .bouton-commande:hover {
-    background-color: #C38470; /* Couleur plus foncée au survol */
-}
-
-
-
-/* Style général du formulaire */
-.wpforms-container input[type="text"],
-.wpforms-container input[type="email"],
-.wpforms-container textarea {
-    width: 100% !important;
-    padding: 24px !important;
-    border: 1px solid #ddd !important;
-    border-radius: 10px !important;
-    background-color: #ffffff !important;
-    font-size: 16px !important;
-    color: #FFF!important;
-    margin-bottom: 15px !important;
-}
-
-/* Style du bouton */
-.wpforms-container button[type="submit"],
-.wpforms-container input[type="submit"] {
-    background-color: #E6AFAF !important;
-    margin-left: 150px;
-    color: #fff !important;
-    border: none !important;
-    border-radius: 10px !important;
-    padding: 12px 40px !important;
-    font-size: 18px !important;
-    margin-top: 50px;
-}
-
-
-
 /* Style des labels */
 .wpforms-container label {
     font-size: 14px !important;
@@ -191,15 +141,15 @@ body {
 
 .lien-admin a {
     display: inline-block;
-    background-color: #fdfdfd; /* Couleur de fond */
-    color: #0b0b0b; /* Couleur du texte */
-    padding: 10px 20px; /* Espacement interne */
-    font-weight: bold; /* Texte en gras */
-    font-size: 14px; /* Taille de la police */
-    text-decoration: none; /* Supprime le soulignement */
-    margin-left: 15px; /* Espace à gauche */
-    box-shadow: none; /* Supprime l'ombre */
-    cursor: pointer; /* Change le curseur en main */
+    background-color: #fdfdfd; 
+    color: #0b0b0b; 
+    padding: 10px 20px; 
+    font-weight: bold; 
+    font-size: 14px; 
+    text-decoration: none; 
+    margin-left: 15px; 
+    box-shadow: none; 
+    cursor: pointer; 
 }
 
 .lien-admin a:hover {
@@ -237,7 +187,7 @@ label {
 
 /* Style de la section du formulaire */
 .wpforms-container {
-    background-color: #4CAF50; /* Couleur de fond */
+    background-color: #4CAF50; 
     padding: 20px;
     border-radius: 10px;
 }
@@ -249,11 +199,10 @@ label {
 
 .wpforms-field input,
 .wpforms-field textarea {
-    width: 100%; /* Pour que les champs prennent toute la largeur */
+    width: 100%; 
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: none;
 }
 
 /* Style des titres de section */
@@ -263,30 +212,21 @@ label {
     margin-bottom: 10px;
 }
 
-/* Style du bouton de soumission */
+/* Style du bouton de commander */
 .wpforms-submit {
-    background-color: #D2A6A6; /* Couleur personnalisée */
+    background-color: #D2A6A6; 
     color: #fff;
     border: none;
     padding: 10px 10px;
     border-radius: 5px;
 }
-
-.wpforms-submit:hover {
-    
-background-color: #b68b8b; /* Couleur au survol */
-}
-
-
-
-
-/* Largeur et espacement des champs */
+/* Formulaire de la page commander */
 .wpforms-container .wpforms-field {
-    flex: 0 0 48%; /* Largeur des champs */
-    max-width: 100%; /* Ajuste cette valeur pour élargir ou réduire les champs */
-    margin-bottom: 5px; /* Espacement entre les champs */
+    flex: 0 0 48%; 
+    max-width: 100%; 
+    margin-bottom: 5px; 
 }
-/* Couleur des titres des champs */
+
 label.wpforms-field-label {
     color: #ffffff !important; /* Change la couleur des titres en blanc */
 }
@@ -296,7 +236,7 @@ label.wpforms-field-label {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 900px; /* Largeur totale du formulaire */
+    max-width: 900px; 
     
 }
 /* Alignement des sections en colonnes */
@@ -306,7 +246,6 @@ label.wpforms-field-label {
 
     margin-left: 55px;
 }
-
 
 /* Ligne de séparation verticale */
 .wpforms-field-container::before {
@@ -325,22 +264,76 @@ label.wpforms-field-label {
     justify-content: center;
     margin-top: 20px;
 }
+/* Style du bouton */
+.wpforms-container button[type="submit"],
+.wpforms-container input[type="submit"] {
+    background-color: #E6AFAF !important;
+    margin-left: 150px;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 10px !important;
+    padding: 12px 40px !important;
+    font-size: 18px !important;
+    margin-top: 50px;
+}
 
 
 /* Ajustements pour les petits écrans */
 @media (max-width: 768px) {
     .wpforms-container .wpforms-field {
-        flex: 0 0 100%; /* Une seule colonne sur les petits écrans */
+        flex: 0 0 100%; 
     }
     .wpforms-field-container::before {
-        display: none; /* Masque la ligne de séparation sur les petits écrans */
+        display: none; 
     }
 }
+/* Mise en page du bouton formulaire page "nous rencontrer" */
+.contact-form-container {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: none; 
+    background-color: transparent; 
+    border: none; 
+    position: relative;
+}
 
+.contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
 
+.contact-form-container label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #fff; 
+}
+
+.contact-form-container button {
+    display: block;
+    width: 50%;
+    background-color: #d7a89c; 
+    color: #fff;
+    padding: 10px;
+    align-items: center;
+    margin-left: 70px;
+}
 /* FOOTER */
 #footer {
-    background-color: #FFF; /* Couleur de fond du footer */
+    background-color: #FFF; 
     margin-top: 20px;
     display: flex;
     justify-content: center;
