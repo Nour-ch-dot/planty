@@ -160,6 +160,38 @@ body {
 .lien-admin a:hover {
     background-color: #fefdfd; /* Couleur au survol */
 }
+/*border de la page d'acceuil*/
+
+.elementor-element-cf83d28 {
+    border: 5px solid #4caf50; /* Couleur et épaisseur de la bordure */
+    border-radius: 25px; /* Coins arrondis */
+    padding: 20px; /* Espace intérieur */
+    background-color: #f9f9f9; /* Couleur de fond */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+    transition: all 0.3s ease-in-out; /* Animation fluide */
+    clip-path: ellipse(150% 100% at 50% 0);
+
+}
+
+.elementor-element-69caf44 {
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px; /* Espace interne autour du contenu */
+    background-color: #ffffff; /* Couleur de fond blanche */
+    transition: all 0.3s ease-in-out; /* Animation fluide */
+    clip-path: ellipse(80% 100% at 50% 0);
+
+}
+
+
+
+
+
+
+    
+
+
+
+
 
  /* Css de la page commander */
  
@@ -329,8 +361,16 @@ label.wpforms-field-label {
     color: #fff;
     padding: 10px;
     align-items: center;
-    margin-left: 70px;
-}
+    margin-left: 70px; }
+    /*border de la page recontrer*/
+    .elementor-element-a9f1fca {
+        background-color: #f2ebe5; /* Couleur de fond */
+        clip-path: ellipse(120% 100% at 50% 0);
+        padding: 30px;
+    }
+    
+    
+
 /* FOOTER */
 #footer {
     background-color: #FFF; 
