@@ -163,35 +163,17 @@ body {
 /*border de la page d'acceuil*/
 
 .elementor-element-cf83d28 {
-    border: 5px solid #4caf50; /* Couleur et épaisseur de la bordure */
-    border-radius: 25px; /* Coins arrondis */
-    padding: 20px; /* Espace intérieur */
-    background-color: #f9f9f9; /* Couleur de fond */
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Ombre subtile */
-    transition: all 0.3s ease-in-out; /* Animation fluide */
+    border-radius: 25px;
+    padding: 20px;
     clip-path: ellipse(150% 100% at 50% 0);
 
 }
 
 .elementor-element-69caf44 {
-    border-radius: 10px; /* Coins arrondis */
-    padding: 20px; /* Espace interne autour du contenu */
-    background-color: #ffffff; /* Couleur de fond blanche */
-    transition: all 0.3s ease-in-out; /* Animation fluide */
-    clip-path: ellipse(80% 100% at 50% 0);
+    border-radius: 10px; 
+    padding: 20px; 
 
 }
-
-
-
-
-
-
-    
-
-
-
-
 
  /* Css de la page commander */
  
@@ -391,3 +373,58 @@ label.wpforms-field-label {
     text-decoration: underline; /* Effet au survol */
     background-color: #FFFFFF;
 }
+/* Responsive */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Écrans larges */
+@media (min-width: 1025px) {
+    .elementor-section {
+        padding: 40px;
+    }
+}
+
+/* Tablettes */
+@media (max-width: 1024px) {
+    .elementor-section {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+}
+
+/* Téléphones */
+@media (max-width: 768px) {
+    .elementor-section {
+        padding: 10px;
+        flex-direction: column; /* Empile les éléments */
+    }
+    h1 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+/* Très petits téléphones */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2em;
+    }
+    img {
+        width: 100%; /* Adapte les images à la largeur de l'écran */
+    }
+}
+
+
+
+
+
+
+
+
+
+
