@@ -172,6 +172,7 @@ body {
 .elementor-element-69caf44 {
     border-radius: 10px; 
     padding: 20px; 
+    clip-path: ellipse(80% 100% at 50% 0);
 
 }
 
@@ -419,12 +420,109 @@ body {
     }
 }
 
+.custom-logo-link{
+display: none;
+}
+#logo .custom-logo-link{
+    display: block;
+}
 
 
 
+/* Responsive pour mobile */
 
 
+@media (max-width: 768px) {
+    /* Conteneur principal */
+    @media (max-width: 768px) {
+        /* Forcer l'affichage correct du titre principal */
+        .uagb-heading-text {
+            font-size: 1.5rem !important; /* Taille ajustée pour mobile */
+            line-height: 1.2 !important; /* Espacement vertical optimal */
+            text-align: center !important; /* Centre horizontalement */
+            display: inline-block !important; /* Empêche l'affichage vertical */
+            width: auto !important; /* Supprime toute contrainte de largeur */
+            white-space: normal !important; /* Retour à la ligne automatique */
+            overflow-wrap: break-word !important; /* Coupe les mots longs si nécessaire */
+            word-wrap: break-word !important; /* Compatibilité supplémentaire */
+            writing-mode: horizontal-tb !important; /* Annule les orientations verticales */
+            transform: none !important; /* Annule les rotations ou transformations */
+            margin: 0 auto !important; /* Centré avec marges */
+        }
+    }
+    
+    
+    .elementor-element-032f6ba {
+        display: block !important; /* Réinitialisation des règles de flex */
+        font-size: 48px;
+        font-weight: bold;
+        text-align: center !important; /* Centrer le contenu */
+        padding: 10px !important; /* Ajouter de l'espace interne */
+    }
 
+    /* Titre principal */
+    .elementor-element-032f6ba .titre-principal {
+        font-size: 20px !important; /* Taille adaptée pour mobile */
+        margin: 0 auto 15px auto !important; /* Centré avec marge inférieure */
+        line-height: 1.5 !important; /* Espacement des lignes */
+        display: inline-block !important; /* Évite les problèmes de largeur */
+    }
+
+    /* Image de la canette */
+    .elementor-element-032f6ba .image-canette {
+        max-width: 200px !important; /* Taille plus adaptée */
+        display: block !important; /* S'assurer que l'image est bloquée */
+        margin: 15px auto !important; /* Centrage avec marges */
+    }
+
+    /* Feuilles décoratives */
+    .elementor-element-032f6ba .feuilles {
+        position: relative !important; /* Réinitialisation pour mobile */
+        width: 80px !important; /* Taille réduite */
+        margin: 10px auto !important; /* Centré */
+    }
+
+    /* Positionnement gauche */
+    .elementor-element-032f6ba .feuilles.gauche {
+        left: 0 !important;
+        transform: none !important; /* Réinitialisation */
+    }
+
+    /* Positionnement droite */
+    .elementor-element-032f6ba .feuilles.droite {
+        right: 0 !important;
+        transform: none !important; /* Réinitialisation */
+    }
+}
+
+@media (max-width: 768px) {
+    selector {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centre les témoignages */
+        justify-content: flex-start;
+        gap: 20px; /* Ajoute un espace uniforme entre les éléments */
+        padding: 20px;
+    }
+
+    selector img {
+        max-width: 100px; /* Taille ajustée des images */
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    selector h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    selector p {
+        font-size: 1rem;
+        text-align: center;
+        line-height: 1.6;
+    }
+}
 
 
 
