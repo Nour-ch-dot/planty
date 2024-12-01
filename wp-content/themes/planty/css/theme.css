@@ -429,29 +429,7 @@ display: none;
 
 
 
-/* Responsive pour mobile */
 
-
-@media (max-width: 768px) {
-    /* Conteneur principal */
-    @media (max-width: 768px) {
-        /* Forcer l'affichage correct du titre principal */
-        .uagb-heading-text {
-            font-size: 1.5rem !important; /* Taille ajustée pour mobile */
-            line-height: 1.2 !important; /* Espacement vertical optimal */
-            text-align: center !important; /* Centre horizontalement */
-            display: inline-block !important; /* Empêche l'affichage vertical */
-            width: auto !important; /* Supprime toute contrainte de largeur */
-            white-space: normal !important; /* Retour à la ligne automatique */
-            overflow-wrap: break-word !important; /* Coupe les mots longs si nécessaire */
-            word-wrap: break-word !important; /* Compatibilité supplémentaire */
-            writing-mode: horizontal-tb !important; /* Annule les orientations verticales */
-            transform: none !important; /* Annule les rotations ou transformations */
-            margin: 0 auto !important; /* Centré avec marges */
-        }
-    }
-    
-    
     .elementor-element-032f6ba {
         display: block !important; /* Réinitialisation des règles de flex */
         font-size: 48px;
@@ -460,69 +438,95 @@ display: none;
         padding: 10px !important; /* Ajouter de l'espace interne */
     }
 
-    /* Titre principal */
-    .elementor-element-032f6ba .titre-principal {
-        font-size: 20px !important; /* Taille adaptée pour mobile */
-        margin: 0 auto 15px auto !important; /* Centré avec marge inférieure */
-        line-height: 1.5 !important; /* Espacement des lignes */
-        display: inline-block !important; /* Évite les problèmes de largeur */
+/* Pour les écrans entre 500px et 667px */
+@media only screen and (max-width: 667px) and (min-width: 500px) {
+    .page-accueil .section-gouts {
+        display: flex;
+        flex-direction: column; /* Les éléments s'empilent */
+        align-items: center;
+        gap: 15px; /* Ajoutez un espace entre les éléments */
     }
 
-    /* Image de la canette */
-    .elementor-element-032f6ba .image-canette {
-        max-width: 200px !important; /* Taille plus adaptée */
-        display: block !important; /* S'assurer que l'image est bloquée */
-        margin: 15px auto !important; /* Centrage avec marges */
+    .page-accueil .section-gouts .image {
+        width: 85%; /* Ajuste la largeur des images */
+        max-width: 280px; /* Limite la taille maximale */
+        height: auto; /* Conserve les proportions */
     }
 
-    /* Feuilles décoratives */
-    .elementor-element-032f6ba .feuilles {
-        position: relative !important; /* Réinitialisation pour mobile */
-        width: 80px !important; /* Taille réduite */
-        margin: 10px auto !important; /* Centré */
+    .page-accueil .titre-principal {
+        font-size: 15px; /* Réduit la taille de la police */
+        text-align: center;
     }
 
-    /* Positionnement gauche */
-    .elementor-element-032f6ba .feuilles.gauche {
-        left: 0 !important;
-        transform: none !important; /* Réinitialisation */
+    .page-accueil .image-canette {
+        max-width: 220px; /* Réduit la taille de l'image */
+        margin: 20px auto;
     }
 
-    /* Positionnement droite */
-    .elementor-element-032f6ba .feuilles.droite {
-        right: 0 !important;
-        transform: none !important; /* Réinitialisation */
+    .page-accueil .feuilles {
+        width: 90px; /* Réduit les feuilles */
+        top: 10%; /* Ajuste leur position */
     }
 }
 
-@media (max-width: 768px) {
-    selector {
+/* Pour les écrans entre 667px et 768px */
+@media only screen and (max-width: 768px) and (min-width: 668px) {
+    .page-accueil .section-gouts {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centre les témoignages */
-        justify-content: flex-start;
-        gap: 20px; /* Ajoute un espace uniforme entre les éléments */
-        padding: 20px;
+        align-items: center;
+        gap: 20px;
     }
 
-    selector img {
-        max-width: 100px; /* Taille ajustée des images */
+    .page-accueil .section-gouts .image {
+        width: 90%; /* Ajuste légèrement la largeur */
+        max-width: 300px; /* Taille maximale */
         height: auto;
-        margin-bottom: 15px;
     }
 
-    selector h3 {
-        font-size: 1.5rem;
-        margin-bottom: 10px;
+    .page-accueil .titre-principal {
+        font-size: 32px;
         text-align: center;
     }
 
-    selector p {
-        font-size: 1rem;
-        text-align: center;
-        line-height: 1.6;
+    .page-accueil .image-canette {
+        max-width: 240px; /* Réduit la taille de l'image */
+        margin: 20px auto;
+    }
+
+    .page-accueil .feuilles {
+        width: 100px;
+        top: 12%;
     }
 }
 
+/* Pour les écrans entre 737px et 768px */
+@media only screen and (max-width: 768px) and (min-width: 737px) {
+    .page-accueil .section-gouts {
+        display: flex;
+        flex-direction: row; /* Permet d'afficher les éléments sur une seule ligne */
+        justify-content: space-around;
+        align-items: center;
+    }
 
+    .page-accueil .section-gouts .image {
+        width: 45%; /* Divise la largeur pour 2 colonnes */
+        max-width: 300px;
+        height: auto;
+    }
 
+    .page-accueil .titre-principal {
+        font-size: 34px;
+        text-align: center;
+    }
+
+    .page-accueil .image-canette {
+        max-width: 260px;
+        margin: 20px auto;
+    }
+
+    .page-accueil .feuilles {
+        width: 120px;
+        top: 15%;
+    }
+}
