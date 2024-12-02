@@ -437,96 +437,15 @@ display: none;
         text-align: center !important; /* Centrer le contenu */
         padding: 10px !important; /* Ajouter de l'espace interne */
     }
+   
 
-/* Pour les écrans entre 500px et 667px */
-@media only screen and (max-width: 667px) and (min-width: 500px) {
-    .page-accueil .section-gouts {
-        display: flex;
-        flex-direction: column; /* Les éléments s'empilent */
-        align-items: center;
-        gap: 15px; /* Ajoutez un espace entre les éléments */
-    }
 
-    .page-accueil .section-gouts .image {
-        width: 85%; /* Ajuste la largeur des images */
-        max-width: 280px; /* Limite la taille maximale */
-        height: auto; /* Conserve les proportions */
+    #menu-secondary {
+        display: none !important;
     }
+    
+    
 
-    .page-accueil .titre-principal {
-        font-size: 15px; /* Réduit la taille de la police */
-        text-align: center;
-    }
 
-    .page-accueil .image-canette {
-        max-width: 220px; /* Réduit la taille de l'image */
-        margin: 20px auto;
-    }
 
-    .page-accueil .feuilles {
-        width: 90px; /* Réduit les feuilles */
-        top: 10%; /* Ajuste leur position */
-    }
-}
-
-/* Pour les écrans entre 667px et 768px */
-@media only screen and (max-width: 768px) and (min-width: 668px) {
-    .page-accueil .section-gouts {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .page-accueil .section-gouts .image {
-        width: 90%; /* Ajuste légèrement la largeur */
-        max-width: 300px; /* Taille maximale */
-        height: auto;
-    }
-
-    .page-accueil .titre-principal {
-        font-size: 32px;
-        text-align: center;
-    }
-
-    .page-accueil .image-canette {
-        max-width: 240px; /* Réduit la taille de l'image */
-        margin: 20px auto;
-    }
-
-    .page-accueil .feuilles {
-        width: 100px;
-        top: 12%;
-    }
-}
-
-/* Pour les écrans entre 737px et 768px */
-@media only screen and (max-width: 768px) and (min-width: 737px) {
-    .page-accueil .section-gouts {
-        display: flex;
-        flex-direction: row; /* Permet d'afficher les éléments sur une seule ligne */
-        justify-content: space-around;
-        align-items: center;
-    }
-
-    .page-accueil .section-gouts .image {
-        width: 45%; /* Divise la largeur pour 2 colonnes */
-        max-width: 300px;
-        height: auto;
-    }
-
-    .page-accueil .titre-principal {
-        font-size: 34px;
-        text-align: center;
-    }
-
-    .page-accueil .image-canette {
-        max-width: 260px;
-        margin: 20px auto;
-    }
-
-    .page-accueil .feuilles {
-        width: 120px;
-        top: 15%;
-    }
-}
+    

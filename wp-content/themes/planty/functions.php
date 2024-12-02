@@ -9,7 +9,7 @@ function ajouter_liens_menu($items, $args) {
     if ($args->theme_location == 'primary') {
         // Ajoute le bouton "Commander" pour tout le monde
         $lien_commander = '<li class="menu-item lien-commander"><a href="/commander">Commander</a></li>';
-        $items_array = explode('</li>', $items); // Sépare le menu en items individuels
+        $items_array = explode('</li>', $items); 
        
         // Ajoute le lien "Admin" uniquement pour les utilisateurs connectés
         if (is_user_logged_in()) {
@@ -23,7 +23,7 @@ function ajouter_liens_menu($items, $args) {
             }
         }
         
-        $items = implode('</li>', $items_array) . '</li>'; // Reconstruit la liste des items
+        $items = implode('</li>', $items_array) . '</li>'; 
     }
     return $items;
 }
