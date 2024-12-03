@@ -444,8 +444,58 @@ display: none;
         display: none !important;
     }
     
-    
+   /* Styles pour tablettes (entre 768px et 1024px) */
+@media (max-width: 1024px) {
+    .page-accueil .titre-principal {
+        font-size: 32px; /* Réduction de la taille du titre */
+        text-align: center;
+    }
 
+    .page-accueil .image-canette {
+        max-width: 250px; /* Réduction de la taille de la canette */
+        margin: 0 auto;
+    }
 
+    .page-accueil .feuilles {
+        width: 100px; /* Réduction de la taille des feuilles */
+    }
+
+    .page-accueil .feuilles.gauche {
+        left: 10%; /* Ajustement de la position à gauche */
+        top: 40%;
+    }
+
+    .page-accueil .feuilles.droite {
+        right: 10%; /* Ajustement de la position à droite */
+        top: 40%;
+    }
+}
+
+/* Styles pour téléphones (moins de 768px) */
+@media (max-width: 768px) {
+    .page-accueil .titre-principal {
+        font-size: 14px; /* Encore plus petit pour les téléphones */
+        text-align: center;
+    }
+
+    .page-accueil .image-canette {
+        max-width: 200px; /* Taille réduite pour les téléphones */
+        margin: 0 auto;
+    }
+
+    .page-accueil .feuilles {
+        width: 70px; /* Réduction des feuilles */
+    }
+
+    .page-accueil .feuilles.gauche {
+        left: 5%; /* Position ajustée pour les téléphones */
+        top: 50%;
+    }
+
+    .page-accueil .feuilles.droite {
+        right: 5%;
+        top: 50%;
+    }
+}
 
     
