@@ -175,6 +175,13 @@ body {
     clip-path: ellipse(80% 100% at 50% 0);
 
 }
+.elementor-element-032f6ba {
+    display: block !important; /* Réinitialisation des règles de flex */
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center !important; /* Centrer le contenu */
+    padding: 10px !important; /* Ajouter de l'espace interne */
+}
 
  /* Css de la page commander */
  
@@ -375,50 +382,7 @@ label.wpforms-field-label {
     background-color: #FFFFFF;
 }
 /* Responsive */
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
-/* Écrans larges */
-@media (min-width: 1025px) {
-    .elementor-section {
-        padding: 40px;
-    }
-}
-
-/* Tablettes */
-@media (max-width: 1024px) {
-    .elementor-section {
-        padding: 20px;
-    }
-    h1 {
-        font-size: 2em;
-    }
-}
-
-/* Téléphones */
-@media (max-width: 768px) {
-    .elementor-section {
-        padding: 10px;
-        flex-direction: column; /* Empile les éléments */
-    }
-    h1 {
-        font-size: 1.5em;
-        text-align: center;
-    }
-}
-
-/* Très petits téléphones */
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.2em;
-    }
-    img {
-        width: 100%; /* Adapte les images à la largeur de l'écran */
-    }
-}
 
 .custom-logo-link{
 display: none;
@@ -429,73 +393,39 @@ display: none;
 
 
 
+.menu-toggle {
+    display: none !important;
+}
 
-    .elementor-element-032f6ba {
-        display: block !important; /* Réinitialisation des règles de flex */
-        font-size: 48px;
-        font-weight: bold;
-        text-align: center !important; /* Centrer le contenu */
-        padding: 10px !important; /* Ajouter de l'espace interne */
-    }
+
+
+  
    
 
 
-    #menu-secondary {
-        display: none !important;
-    }
-    
-   /* Styles pour tablettes (entre 768px et 1024px) */
-@media (max-width: 1024px) {
-    .page-accueil .titre-principal {
-        font-size: 32px; /* Réduction de la taille du titre */
-        text-align: center;
-    }
-
-    .page-accueil .image-canette {
-        max-width: 250px; /* Réduction de la taille de la canette */
-        margin: 0 auto;
-    }
-
-    .page-accueil .feuilles {
-        width: 100px; /* Réduction de la taille des feuilles */
-    }
-
-    .page-accueil .feuilles.gauche {
-        left: 10%; /* Ajustement de la position à gauche */
-        top: 40%;
-    }
-
-    .page-accueil .feuilles.droite {
-        right: 10%; /* Ajustement de la position à droite */
-        top: 40%;
-    }
+    /* Styles par défaut (desktop) */
+.elementor-element-4e6cb50 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Styles pour téléphones (moins de 768px) */
-@media (max-width: 768px) {
-    .page-accueil .titre-principal {
-        font-size: 14px; /* Encore plus petit pour les téléphones */
-        text-align: center;
+@media (max-width: 480px) {
+    .selector .image-canette {
+        max-width: 150px;
     }
 
-    .page-accueil .image-canette {
-        max-width: 200px; /* Taille réduite pour les téléphones */
-        margin: 0 auto;
+    .selector .feuilles {
+        width: 70px;
     }
 
-    .page-accueil .feuilles {
-        width: 70px; /* Réduction des feuilles */
+    .selector .feuilles.gauche {
+        top: 30%;
+        left: 0;
     }
 
-    .page-accueil .feuilles.gauche {
-        left: 5%; /* Position ajustée pour les téléphones */
-        top: 50%;
-    }
-
-    .page-accueil .feuilles.droite {
-        right: 5%;
-        top: 50%;
+    .selector .feuilles.droite {
+        top: 30%;
+        right: 0;
     }
 }
-
-    
