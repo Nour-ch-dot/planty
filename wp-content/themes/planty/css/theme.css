@@ -175,13 +175,13 @@ body {
     clip-path: ellipse(80% 100% at 50% 0);
 
 }
-.elementor-element-032f6ba {
-    display: block !important; /* Réinitialisation des règles de flex */
-    font-size: 48px;
-    font-weight: bold;
-    text-align: center !important; /* Centrer le contenu */
-    padding: 10px !important; /* Ajouter de l'espace interne */
-}
+ .elementor-element-032f6ba {
+        display: block !important; 
+        font-size: 48px;
+        font-weight: bold;
+        text-align: center !important; 
+        padding: 10px !important; 
+    }
 
  /* Css de la page commander */
  
@@ -381,7 +381,6 @@ label.wpforms-field-label {
     text-decoration: underline; /* Effet au survol */
     background-color: #FFFFFF;
 }
-/* Responsive */
 
 
 .custom-logo-link{
@@ -390,42 +389,154 @@ display: none;
 #logo .custom-logo-link{
     display: block;
 }
-
-
-
-.menu-toggle {
-    display: none !important;
-}
-
-
-
-  
    
-
-
-    /* Styles par défaut (desktop) */
-.elementor-element-4e6cb50 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.menu-toggle { 
+    display: none !important; 
 }
 
-@media (max-width: 480px) {
-    .selector .image-canette {
-        max-width: 150px;
+/* Style général pour Desktop (>1024px) */
+@media (min-width: 1025px) {
+    /* Titre (Heading) */
+    .elementor-heading-title.elementor-size-default {
+        font-size: 36px; /* Taille pour desktop */
+        line-height: 1.5; /* Espacement vertical */
+        text-align: center; /* Centrer le texte */
+        text-transform: uppercase; /* Texte en majuscules */
+        margin: 20px auto; /* Centrer horizontalement */
     }
 
-    .selector .feuilles {
-        width: 70px;
+    /* Image de la canette */
+    .attachment-medium_large.size-medium_large.wp-image-69 {
+        width: 350px; /* Taille de la canette */
+        margin: 20px auto; /* Centrage horizontal */
     }
 
-    .selector .feuilles.gauche {
-        top: 30%;
-        left: 0;
+    /* Feuilles */
+    .attachment-medium.size-medium.wp-image-54, /* Feuille gauche */
+    .attachment-medium.size-medium.wp-image-81 { /* Feuille droite */
+        width: 180px; /* Taille des feuilles */
     }
 
-    .selector .feuilles.droite {
-        top: 30%;
-        right: 0;
+    /* Feuille gauche */
+    .attachment-medium.size-medium.wp-image-54 {
+        margin-left: -28%; /* Position gauche */
+        margin-top: -25%;
     }
+
+    /* Feuille droite */
+    .attachment-medium.size-medium.wp-image-81 {
+        margin-left: -11%; /* Position droite */
+        margin-top: -15%;
+
+    }
+}
+
+/* Style pour Tablettes (768px à 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Titre (Heading) */
+    .elementor-heading-title.elementor-size-default {
+        font-size: 28px; /* Taille pour tablettes */
+        line-height: 1.4; /* Espacement vertical */
+        text-align: center; /* Centrer le texte */
+        text-transform: uppercase; /* Texte en majuscules */
+        margin: 15px auto; /* Centrer horizontalement */
+    }
+
+    /* Image de la canette */
+    .attachment-medium_large.size-medium_large.wp-image-69 {
+        width: 280px; /* Taille de la canette */
+        margin-left: 20%;
+        margin-top: 50%;
+    }
+
+    /* Feuilles */
+    .attachment-medium.size-medium.wp-image-54, /* Feuille gauche */
+    .attachment-medium.size-medium.wp-image-81 { /* Feuille droite */
+        width: 150px; /* Taille ajustée */
+        top: 50%; /* Alignement vertical */
+    }
+
+    /* Feuille gauche */
+    .attachment-medium.size-medium.wp-image-54 {
+        margin-left: -25%; /* Position gauche */
+        margin-top: 30%;
+    }
+
+    /* Feuille droite */
+    .attachment-medium.size-medium.wp-image-81 {
+    margin-left: 20%; /* Position droite */
+    margin-top: 10%;
+    }
+}
+
+/* Style pour Mobiles (320px à 768px) */
+@media (max-width: 767px) {
+    /* Titre (Heading) */
+    .elementor-heading-title.elementor-size-default {
+        font-size: 20px; /* Taille pour mobiles */
+        line-height: 1.4; /* Espacement vertical */
+        text-align: center; /* Centrer le texte */
+        text-transform: uppercase; /* Texte en majuscules */
+        margin: 10px auto; /* Centrer horizontalement */
+    }
+
+    /* Image de la canette */
+    .attachment-medium_large.size-medium_large.wp-image-69 {
+        width: 200px; /* Taille réduite de la canette */
+        margin-left:100% ;
+         margin-top :200Px;
+        transform: translateY(-50%);
+    }
+    
+
+    /* Feuille gauche */
+    .attachment-medium.size-medium.wp-image-54 {
+      margin-left:110%; /* Position gauche */
+       width: 220px;
+       margin-top:-20px;
+       transform: translateY(-50%);
+    }
+
+    /* Feuille droite */
+    .attachment-medium.size-medium.wp-image-81 {
+        margin-left:70%; /* Position droite */
+         margin-top: -30px;
+        transform: translateY(-50%);
+        
+    }
+}
+@media (max-width: 368px) {
+/* Titre (Heading) */
+.elementor-heading-title.elementor-size-default {
+    font-size: 20px; /* Taille pour mobiles */
+    line-height: 1.4; /* Espacement vertical */
+    text-align: center; /* Centrer le texte */
+    text-transform: uppercase; /* Texte en majuscules */
+    margin: 10px auto; /* Centrer horizontalement */
+}
+
+/* Image de la canette */
+.attachment-medium_large.size-medium_large.wp-image-69 {
+    width: 200px; /* Taille réduite de la canette */
+    margin-left:100% ;
+     margin-top :200Px;
+    transform: translateY(-50%);
+}
+
+
+/* Feuille gauche */
+.attachment-medium.size-medium.wp-image-54 {
+  margin-left:80%; /* Position gauche */
+   width: 220px;
+   margin-top:-20px;
+   transform: translateY(-50%);
+}
+
+/* Feuille droite */
+.attachment-medium.size-medium.wp-image-81 {
+    margin-left:20%; /* Position droite */
+     margin-top: -30px;
+    transform: translateY(-50%);
+    
+}
 }
