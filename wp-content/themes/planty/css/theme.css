@@ -505,37 +505,15 @@ display: none;
     }
 
 }
-/* Responsive pour les écrans entre 369px et 769px */
-@media (min-width: 369px) and (max-width: 769px) {
-    /* Conteneur principal */
- 
-    
 
 
-
-    
-
-.attachment-medium.size-medium.wp-image-66{
-    width: 150%; /* Réduction de la taille des images */
-    max-width: 250px; /* Taille maximale */
-    height: auto; /* Conserver les proportions */
-    margin: 0 auto; /* Centrer */
-    margin-left: 10px;
-
+@media (min-width: 769px) and (max-width: 1024px) {
+    .wpforms-validate.wpforms-form.wpforms-ajax-form{
+        align-content: center;
+        width: 750px;
+    }
+.elementor-element.elementor-element-771595f.elementor-absolute.elementor-widget.elementor-widget-image{
+    margin-right: 30%;
 }
 
-
-.attachment-medium.size-medium.wp-image-61{
-width: 80%; /* Réduction de la taille des images */
-max-width: 250px; /* Taille maximale */
-height: auto; /* Conserver les proportions */
-margin: 0 auto; /* Centrer */
-
-
-}
-.elementor-heading-title.elementor-size-default{
-font-size: 18px; /* Taille du texte pour les titres */
-font-weight: bold;
-margin-left: 20px;
-}
 }
