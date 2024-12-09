@@ -508,12 +508,29 @@ display: none;
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
-    .wpforms-validate.wpforms-form.wpforms-ajax-form{
-        align-content: center;
-        width: 750px;
+    
+    
+    .attachment-large.size-large.wp-image-461{
+        margin-right: 40%;
+
     }
-.elementor-element.elementor-element-771595f.elementor-absolute.elementor-widget.elementor-widget-image{
-    margin-right: 30%;
-}
+.attachment-large.size-large.wp-image-82{
+    margin-right: 20%;
+
 
 }
+.attachment-large.size-large.wp-image-52{
+    margin-right: 15%;
+}
+
+
+}
+/*la page rencobtrer*/
+@media (max-width: 769px){
+    .flower-image{
+        width: 50px;
+    }
+    
+  
+}
+
