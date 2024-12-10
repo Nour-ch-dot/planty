@@ -273,12 +273,16 @@ label.wpforms-field-label {
 .wpforms-field-container::before {
     content: '';
     position: absolute;
-    top: -110px;
+    top: -60px;
     bottom: 110px;
-    left: 50%; /* Centre la ligne */
+    right: 50%; /* Centre la ligne */
     width: 1px; /* Largeur de la ligne */
     background-color: #ffffff; /* Couleur de la ligne */
 }
+.wpforms-field-label{
+    margin-left: 40px;
+}
+
 
 /* Centrer le bouton de soumission */
 .wpforms-submit-container {
@@ -389,8 +393,9 @@ display: none;
 #logo .custom-logo-link{
     display: block;
 }
+/* menu */
+
 /* Par défaut (Desktop) */
-/* Par défaut */
 .menu-toggle {
     display: none; /* Caché par défaut */
   }
@@ -442,22 +447,14 @@ display: none;
     }
   }
   
-  
-  
-  
-    
-
-
-
-
 
 
 
 @media (max-width: 450px) {
-    /* Titre (Heading) */
+    /* Titre  */
     .elementor-heading-title.elementor-size-default {
         font-size: 20px; /* Taille pour mobiles */
-        line-height: 1.4; /* Espacement vertical */
+        line-height: 1.4; 
         text-align: center; /* Centrer le texte */
         text-transform: uppercase; /* Texte en majuscules */
         margin: 10px auto; /* Centrer horizontalement */
