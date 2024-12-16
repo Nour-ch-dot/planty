@@ -707,28 +707,64 @@ display: none;
     }
 
 }
-
-@media (max-width: 768px) {
-    .elementor-element-4293772 { /* Remplace avec la bonne classe si nécessaire */
-        display: flex;           /* Utilise Flexbox */
-        flex-direction: column;  /* Colonne pour téléphone */
-        align-items: center;     /* Centre les éléments horizontalement */
-        justify-content: center; /* Centre les éléments verticalement */
-        gap: 20px;               /* Espace entre les éléments */
+/* Médias queries pour téléphones (375px à 468px) */
+@media (min-width: 375px) and (max-width: 468px) {
+    /* Conteneur principal */
+    .elementor-widget-container {
+        display: flex;
+        flex-direction: column; /* Les éléments s'empilent verticalement */
+        justify-content: center; /* Centre verticalement */
+        align-items: center; /* Centre horizontalement */
+        text-align: center;
+        margin: 0 auto; /* Centre le conteneur dans la page */
     }
 
-    .elementor-element-4293772 .elementor-widget-image img {
-        max-width: 150px;        /* Taille fixe des images */
-        height: auto;            /* Garde le ratio */
-        border-radius: 50%;      /* Assure que les images restent circulaires */
+    /* Images */
+    .elementor-widget-container img {
+        max-width: 90%; /* Taille ajustée pour les téléphones */
+        height: auto;
+        margin: 10px 0; /* Espacement autour des images */
     }
 
-    .elementor-element-4293772 .elementor-widget-image {
-        text-align: center;      /* Centre l'image */
-    }
-
-    .elementor-element-4293772 .elementor-heading-title {
-        text-align: center;      /* Centre les titres */
-        font-size: 1rem;         /* Ajuste la taille des titres */
+    /* Titres et textes */
+    .elementor-heading-title,
+    .elementor-widget-container p {
+        font-size: 16px; /* Taille du texte */
+        text-align: center; /* Centre le texte */
+        margin: 5px 0; /* Espacement entre les éléments */
     }
 }
+
+/* Médias queries pour tablettes (468px à 768px) */
+@media (min-width: 468px) and (max-width: 768px) {
+    .elementor-widget-container {
+        display: flex;
+        flex-direction: column; /* Les éléments s'empilent */
+        align-items: center; /* Centre horizontalement */
+        justify-content: center; /* Centre verticalement */
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    /* Images */
+    .elementor-widget-container img {
+        max-width: 70%; /* Réduction plus modérée pour tablettes */
+        height: auto;
+        margin-left: 200px;
+    }
+
+    /* Titres et textes */
+    .elementor-heading-title,
+    .elementor-widget-container p {
+        font-size: 18px; /* Taille légèrement plus grande */
+        margin: 5px 0;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
