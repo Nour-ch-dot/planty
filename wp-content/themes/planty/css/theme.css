@@ -514,8 +514,8 @@ display: none;
 
     /* Image de la canette */
     .attachment-medium_large.size-medium_large.wp-image-69 {
-        width: 250px; /* Taille réduite de la canette */
-        margin-left:190% !important;
+        width: 150px !important; /* Taille réduite de la canette */
+        margin-left:50% !important;
          margin-top :200Px;
         transform: translateY(-50%);
     }
@@ -543,47 +543,37 @@ display: none;
 
 
 @media (min-width: 850px) and (max-width: 1024px) {
-    .elementor-heading-title.elementor-size-default {
-        font-size: 20px; /* Taille pour mobiles */
-        line-height: 1.4; /* Espacement vertical */
-        text-align: center; /* Centrer le texte */
-        text-transform: uppercase; /* Texte en majuscules */
-        margin: 10px auto; /* Centrer horizontalement */
+    .elementor-widget-container {
+        position: relative !important;
+        text-align: center !important;
     }
 
-    /* Image de la canette */
     .attachment-medium_large.size-medium_large.wp-image-69 {
-        width: 350px; /* Taille réduite de la canette */
-        margin-left:40% ;
-         margin-top :250Px;
-        transform: translateY(-50%);
+        position: relative !important;
+        width: 350px !important;
+        margin-left: 160%;      
+        transform: translateY(0) !important;
+        z-index: 2 !important;
     }
-    
 
-    /* Feuille gauche */
     .attachment-medium.size-medium.wp-image-54 {
-      margin-left:70%; /* Position gauche */
-       width: 240px;
-       margin-top:60px;
-       transform: translateY(-50%);
+        position: absolute !important;
+        left: 10% !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        width: 240px !important;
+        z-index: 1 !important;
     }
 
-    /* Feuille droite */
     .attachment-medium.size-medium.wp-image-81 {
-        margin-left:60%; /* Position droite */
-         margin-top: 50px;
-        transform: translateY(-50%);
-        
+        position: absolute !important;
+        right: 10% !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        width: 240px !important;
+        z-index: 1 !important;
     }
-
 }
-
-
-
-
-
-
-
 
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -632,13 +622,33 @@ display: none;
     background-color: red !important;
   }
 }
-@media  (min-width:768px) and ( max-width:1024px){
+@media  (min-width:868px) and ( max-width:1024px){
 
-    input.produit-quantite{
-        margin-left: 150px !important;
-        background-color: red !important;
+    .products {
+        display: flex; /* Active le mode Flexbox */
+        justify-content: center; /* Centre les éléments horizontalement */
+        align-items: center; /* Centre les éléments verticalement */
+        gap: 20px; /* Ajoute un espace entre les éléments */
+        margin-left: 80px !important;
+      }
+      
+      .product {
+        text-align: center;
+        flex: 1 1 200px; /* Chaque produit occupe une largeur fixe */
+        max-width: 250px; /* Largeur maximale */
+      }
+      .product img {
+        width: 100%;
+        max-width: 200px; /* Limite la largeur de l'image */
+        border-radius: 8px; /* Coins arrondis */
+      }
+      
+      .product input[type="number"] {
+        width: 50px; /* Largeur du champ numérique */
+        text-align: center; /* Centre le texte */
+      }
 }
-}
+
 /* --- Style Global (Desktop) --- */
 .products {
     display: flex; /* Active le mode Flexbox */
@@ -668,31 +678,21 @@ display: none;
     margin: 10px auto; /* Centre le champ */
   }
   
-  /* --- Style pour Tablettes (769px - 1024px) --- */
-  @media (min-width: 769px) and (max-width: 1024px) {
-    .products-container {
-        justify-content: center; /* Assure un centrage horizontal */
-    }
-
-    .product-item {
-        flex: 1 1 calc(25% - 16px); /* Quatre produits par ligne */
-    }
-}
 
 
 
 /* Styles pour téléphone (inférieur à 768px) */
-@media (max-width: 768px) {
+@media(max-width: 468px) {
     .commande {
         display: flex; /* Active Flexbox */
         justify-content: center; /* Centre horizontalement */
         align-items: center; /* Centre verticalement */
         flex-direction: column; /* Empile verticalement */
         min-height:auto; /* Prend toute la hauteur de l'écran */
-        margin: 0; /* Supprime toute marge extérieure */
         padding: 0; /* Supprime tout padding */
-        width: 100%; /* Occupe toute la largeur */
+        width: 50%; /* Occupe toute la largeur */
         box-sizing: border-box; /* Gère bordures et paddings */
+        margin-left: -450px !important;
     }
 
     .products {
@@ -734,8 +734,54 @@ display: none;
         text-align: center; /* Centre le texte */
         margin: 0; /* Supprime les marges */
     }
-
 }
+@media (min-width: 468px) and (max-width: 769px) {
+    /* Conteneur principal */
+    .commande {
+        display: flex;
+        flex-direction: column; /* Organise les enfants en colonne */
+        justify-content: center; /* Centre verticalement */
+        align-items: center; /* Centre horizontalement */
+        width: 100%; /* Occupe toute la largeur */
+        box-sizing: border-box;
+        margin-left: -150px !important;  
+      }
+
+    /* Chaque produit */
+    .products {
+        display: flex;
+        flex-direction: column; /* Empile les produits */
+        justify-content: center;
+        align-items: center;
+        gap: 20px; /* Espacement entre chaque produit */
+        width: 100%;
+    }
+
+    /* Chaque image individuelle */
+    .product {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centre horizontalement */
+        justify-content: center;
+        text-align: center;
+        width: 100%; /* Ajuste pour la largeur */
+    }
+
+    /* Images */
+    .product img {
+        max-width: 100%; /* Ajuste à la largeur du conteneur */
+        height: auto;
+        display: block;
+    }
+
+    /* Input */
+    .product input {
+        width: 80px; /* Taille de l'input */
+        margin-top: 10px; /* Espacement avec l'image */
+        text-align: center;
+    }
+}
+
 /* Médias queries pour téléphones (375px à 468px) */
 @media (min-width: 375px) and (max-width: 468px) {
     /* Conteneur principal */
@@ -763,37 +809,4 @@ display: none;
         margin: 5px 0; /* Espacement entre les éléments */
     }
 }
-
-/* Médias queries pour tablettes (468px à 768px) */
-@media (min-width: 468px) and (max-width: 768px) {
-    .elementor-widget-container {
-        display: flex;
-        flex-direction: column; /* Les éléments s'empilent */
-        align-items: center; /* Centre horizontalement */
-        justify-content: center; /* Centre verticalement */
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    /* Images */
-    .elementor-widget-container img {
-        max-width: 70%; /* Réduction plus modérée pour tablettes */
-        height: auto;
-        margin-left: 200px;
-    }
-
-    /* Titres et textes */
-    .elementor-heading-title,
-    .elementor-widget-container p {
-        font-size: 18px; /* Taille légèrement plus grande */
-        margin: 5px 0;
-        text-align: center;
-    }
-}
-
-
-
-
-
-
 
