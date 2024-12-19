@@ -409,7 +409,6 @@ display: none;
   }
   
   /* Pour les écrans ≤ 769px */
-  @media (max-width: 769px) {
     .menu-toggle {
       display: block !important; /* Affiche le bouton menu-toggle */
       font-size: 1.5rem;
@@ -425,183 +424,53 @@ display: none;
     #menu-primary-menu {
       display: none !important; /* Cache le menu principal */
     }
-  }
   
- 
 
-
-  @media (max-width: 450px) {
-    /* Titre  */
-    .elementor-heading-title.elementor-size-default {
-        font-size: 20px; /* Taille pour mobiles */
-        line-height: 1.4; 
-        text-align: center; /* Centrer le texte */
-        text-transform: uppercase; /* Texte en majuscules */
-        margin: 10px auto; /* Centrer horizontalement */
-    }
-
-    /* Image de la canette */
-    .attachment-large.size-large.wp-image-69 {
-        width: 250px !important; /* Taille réduite de la canette */
-        margin-left:30% !important ;
-         margin-top :200Px;
-        transform: translateY(-50%);
-    }
+    
+   
+    
     
 
-    /* Feuille gauche */
-    .attachment-medium.size-medium.wp-image-54 {
-      margin-right:-88% !important; /* Position gauche */
-       width: 150px !important;
-       margin-top:100px !important;
-       transform: translateY(-50%);
-    }
-
-    /* Feuille droite */
-    .attachment-large.size-large.wp-image-81 {
-        margin-right:-70% !important; /* Position droite */
-         margin-top: 100px;
-        transform: translateY(-50%);
-        width: 150px !important;
+    @media (max-width: 450px) {
+        /* Titre  */
+        .elementor-heading-title.elementor-size-default {
+            font-size: 20px; /* Taille pour mobiles */
+            line-height: 1.4; 
+            text-align: center; /* Centrer le texte */
+            text-transform: uppercase; /* Texte en majuscules */
+            margin: 10px auto; /* Centrer horizontalement */
+        }
+    
+        /* Image de la canette */
+        .attachment-large.size-large.wp-image-69 {
+            width: 250px !important; /* Taille réduite de la canette */
+            margin-left:30% !important ;
+             margin-top :200Px;
+            transform: translateY(-50%);
+        }
         
-    }
-}
-@media (min-width: 450px) and (max-width: 650px) {
-    .elementor-heading-title.elementor-size-default {
-        font-size: 20px; /* Taille pour mobiles */
-        line-height: 1.4; /* Espacement vertical */
-        text-align: center; /* Centrer le texte */
-        text-transform: uppercase; /* Texte en majuscules */
-        margin: 10px auto; /* Centrer horizontalement */
-    }
-
-    /* Image de la canette */
-    .attachment-medium_large.size-medium_large.wp-image-69 {
-        width: 250px; /* Taille réduite de la canette */
-        margin-left:160% !important;
-         margin-top :200Px;
-        transform: translateY(-50%);
-    }
     
-
-    /* Feuille gauche */
-    .attachment-medium.size-medium.wp-image-54 {
-      margin-left:275% !important; /* Position gauche */
-       margin-top:-10px;
-       transform: translateY(-50%);
-    }
-
-    /* Feuille droite */
-    .attachment-medium.size-medium.wp-image-81 {
-        margin-left:105%; /* Position droite */
-         margin-top: -30px;
-        transform: translateY(-50%);
-        
-    }
-
-}
-
-
-
-@media (min-width: 650px) and (max-width: 766px) {
-    .elementor-heading-title.elementor-size-default {
-        font-size: 20px; /* Taille pour mobiles */
-        line-height: 1.4; /* Espacement vertical */
-        text-align: center; /* Centrer le texte */
-        text-transform: uppercase; /* Texte en majuscules */
-        margin: 10px auto; /* Centrer horizontalement */
-    }
-
-    /* Image de la canette */
-    .attachment-medium_large.size-medium_large.wp-image-69 {
-        width: 150px !important; /* Taille réduite de la canette */
-        margin-left:50% !important;
-         margin-top :200Px;
-        transform: translateY(-50%);
-    }
+        /* Feuille gauche */
+        .attachment-medium.size-medium.wp-image-54 {
+          margin-right:-88% !important; /* Position gauche */
+           width: 150px !important;
+           margin-top:100px !important;
+           transform: translateY(-50%);
+        }
     
-
-    /* Feuille gauche */
-    .attachment-medium.size-medium.wp-image-54 {
-      margin-left:300px!important; /* Position gauche */
-       margin-top:-10px;
-       transform: translateY(-50%);
+        /* Feuille droite */
+        .attachment-large.size-large.wp-image-81 {
+            margin-right:-70% !important; /* Position droite */
+             margin-top: 100px;
+            transform: translateY(-50%);
+            width: 150px !important;
+            
+        }
     }
+   
 
-    /* Feuille droite */
-    .attachment-medium.size-medium.wp-image-81 {
-        margin-left:130%; /* Position droite */
-         margin-top: -30px;
-        transform: translateY(-50%);
-        
-    }
-
-}
-
-
-
-
-
-@media (min-width: 850px) and (max-width: 1024px) {
-    .elementor-widget-container {
-        position: relative !important;
-        text-align: center !important;
-    }
-
-    .attachment-medium_large.size-medium_large.wp-image-69 {
-        position: relative !important;
-        width: 350px !important;
-        margin-left: 160%;      
-        transform: translateY(0) !important;
-        z-index: 2 !important;
-    }
-
-    .attachment-medium.size-medium.wp-image-54 {
-        position: absolute !important;
-        left: 10% !important;
-        top: 50% !important;
-        transform: translateY(-50%) !important;
-        width: 240px !important;
-        z-index: 1 !important;
-    }
-
-    .attachment-medium.size-medium.wp-image-81 {
-        position: absolute !important;
-        right: 10% !important;
-        top: 50% !important;
-        transform: translateY(-50%) !important;
-        width: 240px !important;
-        z-index: 1 !important;
-    }
-}
-
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    
-    
-    .attachment-large.size-large.wp-image-461{
-        margin-right: 40%;
-
-    }
-.attachment-large.size-large.wp-image-82{
-    margin-right: 20%;
-
-
-}
-.attachment-large.size-large.wp-image-52{
-    margin-right: 15%;
-}
-
-
-}
-/*la page rencobtrer*/
-@media (max-width: 769px){
-    .flower-image{
-        width: 50px;
-    }
-    
   
-}
+   
 @media (min-width: 450px) and (max-width: 750px) {
     .contact-form-container{
         margin-left: 180px;
@@ -779,34 +648,99 @@ display: none;
         width: 80px; /* Taille de l'input */
         margin-top: 10px; /* Espacement avec l'image */
         text-align: center;
+
     }
+
+    
+
+
+
+    @media (max-width: 450px) {
+        /* Titre */
+        .elementor-heading-title.elementor-size-default {
+            font-size: 20px !important; /* Taille pour mobiles */
+            line-height: 1.4 !important; 
+            text-align: center !important; /* Centrer le texte */
+            text-transform: uppercase !important; /* Texte en majuscules */
+            margin: 10px auto !important; /* Centrer horizontalement */
+        }
+    }
+    
+@media (min-width: 450px) and (max-width: 650px) {
+    .elementor-heading-title.elementor-size-default {
+        font-size: 20px; /* Taille pour mobiles */
+        line-height: 1.4; /* Espacement vertical */
+        text-align: center; /* Centrer le texte */
+        text-transform: uppercase; /* Texte en majuscules */
+        margin: 10px auto; /* Centrer horizontalement */
+    }
+
+    /* Image de la canette */
+    .attachment-large.size-large.wp-image-69 {
+        width: 350px; /* Taille réduite de la canette */
+        margin-left:50% !important;
+         margin-top :150Px;
+        transform: translateY(-50%);
+    }
+    
+
+    /* Feuille gauche */
+    .attachment-large.size-large.wp-image-55 {
+      margin-left:60% !important; /* Position gauche */
+       transform: translateY(-50%);
+       margin-top: 60px;
+    }
+
+    /* Feuille droite */
+    .attachment-large.size-large.wp-image-54 {
+        margin-right:-65%; /* Position droite */
+        transform: translateY(-50%);
+        margin-top: 60px;
+    }
+
 }
 
-/* Médias queries pour téléphones (375px à 468px) */
-@media (min-width: 375px) and (max-width: 468px) {
-    /* Conteneur principal */
-    .elementor-widget-container {
-        display: flex;
-        flex-direction: column; /* Les éléments s'empilent verticalement */
-        justify-content: center; /* Centre verticalement */
-        align-items: center; /* Centre horizontalement */
-        text-align: center;
-        margin: 0 auto; /* Centre le conteneur dans la page */
+
+
+@media (min-width: 650px) and (max-width: 766px) {
+    .elementor-heading-title.elementor-size-default {
+        font-size: 20px; /* Taille pour mobiles */
+        line-height: 1.4; /* Espacement vertical */
+        text-align: center; /* Centrer le texte */
+        text-transform: uppercase; /* Texte en majuscules */
+        margin: 10px auto; /* Centrer horizontalement */
     }
 
-    /* Images */
-    .elementor-widget-container img {
-        max-width: 90%; /* Taille ajustée pour les téléphones */
-        height: auto;
-        margin: 10px 0; /* Espacement autour des images */
+    /* Image de la canette */
+    .attachment-large.size-large.wp-image-69 {
+        width: 250px !important; /* Taille réduite de la canette */
+        margin-left:90% !important;
+         margin-top :200Px;
+        transform: translateY(-50%);
+    }
+    
+
+    /* Feuille gauche */
+    .attachment-large.size-large.wp-image-55 {
+      margin-right:-40%!important; /* Position gauche */
+       margin-top:-10px;
+       transform: translateY(-50%);
     }
 
-    /* Titres et textes */
-    .elementor-heading-title,
-    .elementor-widget-container p {
-        font-size: 16px; /* Taille du texte */
-        text-align: center; /* Centre le texte */
-        margin: 5px 0; /* Espacement entre les éléments */
+    /* Feuille droite */
+    .attachment-large.size-large.wp-image-54 {
+        margin-left:65%; /* Position droite */
+         margin-top: 29%;
+        transform: translateY(-50%);
+        
     }
+
 }
+}
+
+
+
+
+
+
 
