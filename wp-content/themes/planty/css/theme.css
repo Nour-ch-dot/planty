@@ -421,57 +421,22 @@ display: none;
       z-index: 1000;
     }
   
-    #menu-primary-menu {
-      display: none !important; /* Cache le menu principal */
-    }
-  
+    
 
     
    
     
     
 
-    @media (max-width: 450px) {
-        /* Titre  */
-        .elementor-heading-title.elementor-size-default {
-            font-size: 20px; /* Taille pour mobiles */
-            line-height: 1.4; 
-            text-align: center; /* Centrer le texte */
-            text-transform: uppercase; /* Texte en majuscules */
-            margin: 10px auto; /* Centrer horizontalement */
-        }
-    
-        /* Image de la canette */
-        .attachment-large.size-large.wp-image-69 {
-            width: 250px !important; /* Taille réduite de la canette */
-            margin-left:30% !important ;
-             margin-top :200Px;
-            transform: translateY(-50%);
-        }
-        
-    
-        /* Feuille gauche */
-        .attachment-medium.size-medium.wp-image-54 {
-          margin-right:-88% !important; /* Position gauche */
-           width: 150px !important;
-           margin-top:100px !important;
-           transform: translateY(-50%);
-        }
-    
-        /* Feuille droite */
-        .attachment-large.size-large.wp-image-81 {
-            margin-right:-70% !important; /* Position droite */
-             margin-top: 100px;
-            transform: translateY(-50%);
-            width: 150px !important;
-            
-        }
-    }
    
 
   
    
 @media (min-width: 450px) and (max-width: 750px) {
+    #menu-primary-menu {
+        display: none !important; /* Cache le menu principal */
+      }
+    
     .contact-form-container{
         margin-left: 180px;
         width: 300px;
@@ -481,6 +446,10 @@ display: none;
     }
 }
 @media ( max-width:768px){
+    #menu-primary-menu {
+        display: none !important; /* Cache le menu principal */
+      }
+    
 
     #wpforms-submit-347.wpforms-submit
   {
@@ -491,77 +460,21 @@ display: none;
     background-color: red !important;
   }
 }
-@media  (min-width:868px) and ( max-width:1024px){
 
-    .products {
-        display: flex; /* Active le mode Flexbox */
-        justify-content: center; /* Centre les éléments horizontalement */
-        align-items: center; /* Centre les éléments verticalement */
-        gap: 20px; /* Ajoute un espace entre les éléments */
-        margin-left: 80px !important;
-      }
-      
-      .product {
-        text-align: center;
-        flex: 1 1 200px; /* Chaque produit occupe une largeur fixe */
-        max-width: 250px; /* Largeur maximale */
-      }
-      .product img {
-        width: 100%;
-        max-width: 200px; /* Limite la largeur de l'image */
-        border-radius: 8px; /* Coins arrondis */
-      }
-      
-      .product input[type="number"] {
-        width: 50px; /* Largeur du champ numérique */
-        text-align: center; /* Centre le texte */
-      }
-}
+/*page de commander*/
 
-/* --- Style Global (Desktop) --- */
-.products {
-    display: flex; /* Active le mode Flexbox */
-    justify-content: center; /* Centre les éléments horizontalement */
-    align-items: center; /* Centre les éléments verticalement */
-    gap: 20px; /* Ajoute un espace entre les éléments */
-    margin: 20px auto;
-    max-width: 1200px; /* Limite la largeur totale */
-  }
-  
-  .product {
-    text-align: center;
-    flex: 1 1 200px; /* Chaque produit occupe une largeur fixe */
-    max-width: 250px; /* Largeur maximale */
-  }
-  
-  .product img {
-    width: 100%;
-    max-width: 200px; /* Limite la largeur de l'image */
-    border-radius: 8px; /* Coins arrondis */
-    margin: 0 auto; /* Centre l'image */
-  }
-  
-  .product input[type="number"] {
-    width: 50px; /* Largeur du champ numérique */
-    text-align: center; /* Centre le texte */
-    margin: 10px auto; /* Centre le champ */
-  }
-  
-
-
-
-/* Styles pour téléphone (inférieur à 768px) */
 @media(max-width: 468px) {
+    #menu-primary-menu {
+        display: none !important; /* Cache le menu principal */
+      }
+    
     .commande {
         display: flex; /* Active Flexbox */
         justify-content: center; /* Centre horizontalement */
         align-items: center; /* Centre verticalement */
-        flex-direction: column; /* Empile verticalement */
         min-height:auto; /* Prend toute la hauteur de l'écran */
         padding: 0; /* Supprime tout padding */
         width: 50%; /* Occupe toute la largeur */
-        box-sizing: border-box; /* Gère bordures et paddings */
-        margin-left: -450px !important;
     }
 
     .products {
@@ -651,95 +564,51 @@ display: none;
 
     }
 
+    @media  (min-width:868px) and ( max-width:1024px){
+       
+       
+        
+        .products {
+            display: flex; /* Active le mode Flexbox */
+            justify-content: center; /* Centre les éléments horizontalement */
+            align-items: center; /* Centre les éléments verticalement */
+            gap: 20px; /* Ajoute un espace entre les éléments */
+            margin-left: 80px !important;
+          }
+          
+          .product {
+            text-align: center;
+            flex: 1 1 200px; /* Chaque produit occupe une largeur fixe */
+            max-width: 250px; /* Largeur maximale */
+          }
+          .product img {
+            width: 100%;
+            max-width: 200px; /* Limite la largeur de l'image */
+            border-radius: 8px; /* Coins arrondis */
+          }
+          
+          .product input[type="number"] {
+            width: 50px; /* Largeur du champ numérique */
+            text-align: center; /* Centre le texte */
+          }
+    }
     
-
-
-
-    @media (max-width: 450px) {
-        /* Titre */
-        .elementor-heading-title.elementor-size-default {
-            font-size: 20px !important; /* Taille pour mobiles */
-            line-height: 1.4 !important; 
-            text-align: center !important; /* Centrer le texte */
-            text-transform: uppercase !important; /* Texte en majuscules */
-            margin: 10px auto !important; /* Centrer horizontalement */
+}
+    /* Médias queries la page d'accueil*/
+    @media (min-width: 1024px) {
+        /* Feuille de droite */
+        .feuille-droite {
+            right: 20% !important; /* Ajustez selon l’espace souhaité */
+            top: -70% !important; /* Centré verticalement */
+            transform: translateY(-50%); /* Ajustement parfait du centrage vertical */
+            width: 35%; /* Ajustez la taille si nécessaire */
+            z-index: 1; /* Place derrière la canette */
         }
     }
     
-@media (min-width: 450px) and (max-width: 650px) {
-    .elementor-heading-title.elementor-size-default {
-        font-size: 20px; /* Taille pour mobiles */
-        line-height: 1.4; /* Espacement vertical */
-        text-align: center; /* Centrer le texte */
-        text-transform: uppercase; /* Texte en majuscules */
-        margin: 10px auto; /* Centrer horizontalement */
-    }
+       
 
-    /* Image de la canette */
-    .attachment-large.size-large.wp-image-69 {
-        width: 350px; /* Taille réduite de la canette */
-        margin-left:50% !important;
-         margin-top :150Px;
-        transform: translateY(-50%);
-    }
     
-
-    /* Feuille gauche */
-    .attachment-large.size-large.wp-image-55 {
-      margin-left:60% !important; /* Position gauche */
-       transform: translateY(-50%);
-       margin-top: 60px;
-    }
-
-    /* Feuille droite */
-    .attachment-large.size-large.wp-image-54 {
-        margin-right:-65%; /* Position droite */
-        transform: translateY(-50%);
-        margin-top: 60px;
-    }
-
-}
-
-
-
-@media (min-width: 650px) and (max-width: 766px) {
-    .elementor-heading-title.elementor-size-default {
-        font-size: 20px; /* Taille pour mobiles */
-        line-height: 1.4; /* Espacement vertical */
-        text-align: center; /* Centrer le texte */
-        text-transform: uppercase; /* Texte en majuscules */
-        margin: 10px auto; /* Centrer horizontalement */
-    }
-
-    /* Image de la canette */
-    .attachment-large.size-large.wp-image-69 {
-        width: 250px !important; /* Taille réduite de la canette */
-        margin-left:90% !important;
-         margin-top :200Px;
-        transform: translateY(-50%);
-    }
-    
-
-    /* Feuille gauche */
-    .attachment-large.size-large.wp-image-55 {
-      margin-right:-40%!important; /* Position gauche */
-       margin-top:-10px;
-       transform: translateY(-50%);
-    }
-
-    /* Feuille droite */
-    .attachment-large.size-large.wp-image-54 {
-        margin-left:65%; /* Position droite */
-         margin-top: 29%;
-        transform: translateY(-50%);
-        
-    }
-
-}
-}
-
-
-
 
 
 
