@@ -407,209 +407,128 @@ display: none;
     padding: 0;
     gap: 20px; /* Espacement entre les liens */
   }
-  
-  /* Pour les écrans ≤ 769px */
-    .menu-toggle {
-      display: block !important; /* Affiche le bouton menu-toggle */
-      font-size: 1.5rem;
-      background: none;
-      border: none;
-      cursor: pointer;
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      z-index: 1000;
-    }
-  
-    
+ 
 
-    
-   
-    
-    
 
-   
-
-  
-   
-@media (min-width: 450px) and (max-width: 750px) {
-    #menu-primary-menu {
-        display: none !important; /* Cache le menu principal */
-      }
-    
-    .contact-form-container{
-        margin-left: 180px;
-        width: 300px;
-    }
-    .flower-image{
-        display: none;
-    }
-}
-@media ( max-width:768px){
-    #menu-primary-menu {
-        display: none !important; /* Cache le menu principal */
-      }
-    
-
-    #wpforms-submit-347.wpforms-submit
-  {
-    margin-left: 30px !important;
-  }
-  input.produit-quantite{
-    margin-left: 150px !important;
-    background-color: red !important;
-  }
+/* Conteneur Principal */
+.commande {
+    text-align: center;
+    margin: 20px auto;
+    padding: 20px;
 }
 
-/*page de commander*/
+/* Grille des Produits */
+.products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes égales */
+    gap: 20px; /* Espacement entre les produits */
+    justify-content: center; /* Centre la grille horizontalement */
+    align-items: center; /* Centre la grille verticalement */
+    margin: 0 auto;
+    max-width: 1200px; /* Limite la largeur totale */
+}
 
-@media(max-width: 468px) {
-    #menu-primary-menu {
-        display: none !important; /* Cache le menu principal */
-      }
+/* Carte Produit */
+.product {
     
-    .commande {
-        display: flex; /* Active Flexbox */
-        justify-content: center; /* Centre horizontalement */
-        align-items: center; /* Centre verticalement */
-        min-height:auto; /* Prend toute la hauteur de l'écran */
-        padding: 0; /* Supprime tout padding */
-        width: 50%; /* Occupe toute la largeur */
-    }
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
 
-    .products {
-        display: flex; /* Active Flexbox */
-        flex-direction: column; /* Empile les produits verticalement */
-        justify-content: center; /* Centre verticalement */
-        align-items: center; /* Centre horizontalement */
-        gap: 20px; /* Espacement entre chaque produit */
-        width: 100%; /* Largeur totale */
-        margin: 0 auto; /* Centre horizontalement */
-        padding: 0; /* Supprime les marges internes */
-        box-sizing: border-box; /* Inclut paddings dans la largeur */
-        
-            padding: 10px; /* Ajoute de l'espace autour des produits */
-        }
-        
+
+
+
+/* Image du Produit */
+.product img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Input du Produit */
+.product input {
+    margin-top: 10px;
+    width: 60px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+/* Styles généraux du formulaire */
+/* Styles généraux du formulaire */
+
+
+
+
+
+@media (max-width: 768px) {
     
-    .product {
-        display: flex; /* Active Flexbox pour chaque produit */
-        flex-direction: column; /* Empile l'image et l'input */
-        align-items: center; /* Centre horizontalement */
-        gap: 10px; /* Espace entre l'image et l'input */
-        width: 90%; /* Produit occupe 90% de la largeur */
-        max-width: 300px; /* Largeur maximale */
-        margin: 0 auto; /* Centre chaque produit */
-        text-align: center; /* Centre le texte */
-        box-sizing: border-box; /* Gère les bordures */
+/* Ajustement spécifique pour les écrans mobiles */
+form.wpforms-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center; /* Centre les champs horizontalement */
+    justify-content: center; /* Centre les champs verticalement si nécessaire */}
+    .wpforms-container {
+        padding: 10px;
     }
 
-    .product img {
-        max-width: 100%; /* L'image occupe toute la largeur */
-        height: auto; /* Conserve les proportions */
-        display: block; /* Bloque l'image pour éviter les débordements */
-        margin: 0 auto; /* Centre horizontalement */
+    form.wpforms-form {
+        width: 70%; /* Ajuste la largeur du formulaire */
+        margin: 0 auto;
+        align-items: center !important; /* Centre horizontalement les champs */
+        justify-content: center !important; 
     }
 
-    .product input {
-        width: 80px; /* Taille fixe pour le champ input */
-        text-align: center; /* Centre le texte */
-        margin: 0; /* Supprime les marges */
+    form.wpforms-form input[type="text"],
+    form.wpforms-form input[type="email"],
+    form.wpforms-form input[type="number"],
+    form.wpforms-form textarea {
+        width: 80%; /* Ajuste la largeur des champs */
+        max-width: 350px;
+        font-size: 14px;
+        padding: 8px;
+    }
+    .wpforms-submit{
+        margin: 0 auto !important;
+
     }
 }
-@media (min-width: 468px) and (max-width: 769px) {
-    /* Conteneur principal */
-    .commande {
-        display: flex;
-        flex-direction: column; /* Organise les enfants en colonne */
-        justify-content: center; /* Centre verticalement */
-        align-items: center; /* Centre horizontalement */
-        width: 100%; /* Occupe toute la largeur */
-        box-sizing: border-box;
-        margin-left: -150px !important;  
-      }
 
-    /* Chaque produit */
-    .products {
-        display: flex;
-        flex-direction: column; /* Empile les produits */
-        justify-content: center;
-        align-items: center;
-        gap: 20px; /* Espacement entre chaque produit */
-        width: 100%;
+/* Ajustement pour les très petits écrans (téléphones) */
+@media (max-width: 369px) {
+    form.wpforms-form {
+        width: 85%;
     }
 
-    /* Chaque image individuelle */
-    .product {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centre horizontalement */
-        justify-content: center;
-        text-align: center;
-        width: 100%; /* Ajuste pour la largeur */
+    form.wpforms-form input[type="text"],
+    form.wpforms-form input[type="email"],
+    form.wpforms-form input[type="number"],
+    form.wpforms-form textarea {
+        width: 90%;
+        font-size: 12px;
+        padding: 6px;
     }
-
-    /* Images */
-    .product img {
-        max-width: 100%; /* Ajuste à la largeur du conteneur */
-        height: auto;
-        display: block;
-    }
-
-    /* Input */
-    .product input {
-        width: 80px; /* Taille de l'input */
-        margin-top: 10px; /* Espacement avec l'image */
-        text-align: center;
+    .wpforms-submit{
+        margin: 0 auto !important;
 
     }
-
-    @media  (min-width:868px) and ( max-width:1024px){
-       
-       
-        
-        .products {
-            display: flex; /* Active le mode Flexbox */
-            justify-content: center; /* Centre les éléments horizontalement */
-            align-items: center; /* Centre les éléments verticalement */
-            gap: 20px; /* Ajoute un espace entre les éléments */
-            margin-left: 80px !important;
-          }
-          
-          .product {
-            text-align: center;
-            flex: 1 1 200px; /* Chaque produit occupe une largeur fixe */
-            max-width: 250px; /* Largeur maximale */
-          }
-          .product img {
-            width: 100%;
-            max-width: 200px; /* Limite la largeur de l'image */
-            border-radius: 8px; /* Coins arrondis */
-          }
-          
-          .product input[type="number"] {
-            width: 50px; /* Largeur du champ numérique */
-            text-align: center; /* Centre le texte */
-          }
-    }
-    
 }
-    /* Médias queries la page d'accueil*/
-    @media (min-width: 1024px) {
-        /* Feuille de droite */
-        .feuille-droite {
-            right: 20% !important; /* Ajustez selon l’espace souhaité */
-            top: -70% !important; /* Centré verticalement */
-            transform: translateY(-50%); /* Ajustement parfait du centrage vertical */
-            width: 35%; /* Ajustez la taille si nécessaire */
-            z-index: 1; /* Place derrière la canette */
-        }
+@media (min-width: 600px) and (max-width: 768px) {
+    form.wpforms-form {
+        width: 70%; /* Ajuste légèrement la largeur */
+        max-width: 400px;
     }
-    
-       
+    .wpforms-submit{
+        margin: 0 auto !important;
 
-    
-
-
+    }
+}
 
 
