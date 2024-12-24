@@ -410,125 +410,161 @@ display: none;
  
 
 
-/* Conteneur Principal */
+
+
+
+
+
+
+
+
+
+  /*page de commander*/
+
+  /* Style général de la section commande */
 .commande {
     text-align: center;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-/* Grille des Produits */
-.products {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 colonnes égales */
-    gap: 20px; /* Espacement entre les produits */
-    justify-content: center; /* Centre la grille horizontalement */
-    align-items: center; /* Centre la grille verticalement */
-    margin: 0 auto;
-    max-width: 1200px; /* Limite la largeur totale */
-}
-
-/* Carte Produit */
-.product {
-    
-    border-radius: 8px;
-    text-align: center;
     padding: 10px;
-    transition: transform 0.3s ease-in-out;
-}
-
-
-
-
-/* Image du Produit */
-.product img {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-    border-radius: 8px;
-}
-
-/* Input du Produit */
-.product input {
-    margin-top: 10px;
-    width: 60px;
+  }
+  
+  /* Conteneur des produits */
+  .products {
+    display: flex; /* Aligne les produits horizontalement */
+    flex-wrap: wrap; /* Passe à la ligne si l'espace est insuffisant */
+    gap: 10px; /* Espacement uniforme entre les produits */
+    justify-content: center; /* Centre les produits horizontalement */
+    align-items: flex-start; /* Aligne les produits en haut */
+  }
+  
+  /* Style pour chaque produit */
+  .product {
     text-align: center;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 5px;
-}
+    max-width: 150px; /* Largeur maximale pour chaque produit */
+    border-radius: 8px; /* Coins arrondis */
+    padding: 10px; /* Espacement interne */
+    transition: transform 0.2s ease-in-out; /* Animation au survol */
+  }
+  
+  
+  
+  /* Style pour les images */
+  .product img {
+    width: 100%; /* L'image remplit le conteneur */
+    height: auto; /* Garde les proportions */
+    border-radius: 6px; /* Coins arrondis pour l'image */
+    margin-bottom: 10px; /* Espacement avec l'input */
+  }
+  
+  /* Style pour le champ input */
+  .product input {
+    margin-top: 5px; /* Espacement avec l'image */
+    width: 40px; /* Largeur du champ */
+    padding: 5px; /* Espacement interne */
+    text-align: center; /* Centre le texte */
+    border: 1px solid #ccc; /* Bordure subtile */
+    border-radius: 4px; /* Coins arrondis */
+    font-size: 14px;
+  }
+  
+  /*la page commander*/
 
-/* Styles généraux du formulaire */
-/* Styles généraux du formulaire */
+/* Conteneur Principal */
+@media (max-width: 769px) {
 
-
-
-
-
-@media (max-width: 768px) {
+    .commande {
+        text-align: center;
+        margin: 20px auto;
+        padding: 20px;
+    }
     
-/* Ajustement spécifique pour les écrans mobiles */
-form.wpforms-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center; /* Centre les champs horizontalement */
-    justify-content: center; /* Centre les champs verticalement si nécessaire */}
-    .wpforms-container {
-        padding: 10px;
-    }
-
-    form.wpforms-form {
-        width: 70%; /* Ajuste la largeur du formulaire */
+    /* Grille des Produits */
+    .products {
+        display: grid;
+        gap: 20px; /* Espacement entre les produits */
+        justify-content: center; /* Centre la grille horizontalement */
+        align-items: center; /* Centre la grille verticalement */
         margin: 0 auto;
-        align-items: center !important; /* Centre horizontalement les champs */
-        justify-content: center !important; 
+        max-width: 1200px; /* Limite la largeur totale */
     }
-
-    form.wpforms-form input[type="text"],
-    form.wpforms-form input[type="email"],
-    form.wpforms-form input[type="number"],
-    form.wpforms-form textarea {
-        width: 80%; /* Ajuste la largeur des champs */
-        max-width: 350px;
-        font-size: 14px;
-        padding: 8px;
+    
+    /* Carte Produit */
+    .product {
+        
+        border-radius: 8px;
+        text-align: center;
+        padding: 10px;
+        transition: transform 0.3s ease-in-out;
     }
-    .wpforms-submit{
-        margin: 0 auto !important;
-
+    
+    
+    
+    
+    /* Image du Produit */
+    .product img {
+        width: 120%;
+        max-width: 200%;
+        height: auto;
+        border-radius: 8px;
     }
+    
+    /* Input du Produit */
+    .product input {
+        margin-top: 10px;
+        width: 40px;
+        text-align: center;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 5px;
+    }
+    
+    
+    }
+    
+    
+    /* Style du bouton de commander */
+.wpforms-submit {
+    background-color: #D2A6A6; 
+    color: #fff;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
 }
 
-/* Ajustement pour les très petits écrans (téléphones) */
-@media (max-width: 369px) {
-    form.wpforms-form {
-        width: 85%;
-    }
 
-    form.wpforms-form input[type="text"],
-    form.wpforms-form input[type="email"],
-    form.wpforms-form input[type="number"],
-    form.wpforms-form textarea {
-        width: 90%;
-        font-size: 12px;
-        padding: 6px;
-    }
-    .wpforms-submit{
-        margin: 0 auto !important;
-
-    }
+@media (max-width: 1024px) {
+    #menu-primary-menu {
+    display: none !important; /* Cache le menu principal */
+  }
 }
-@media (min-width: 600px) and (max-width: 768px) {
-    form.wpforms-form {
-        width: 70%; /* Ajuste légèrement la largeur */
-        max-width: 400px;
+/* Masquer l'image sur les écrans inférieurs à 1024px */
+@media (max-width: 1024px) {
+    .elementor-23 .elementor-element.elementor-element-2ed67e0 img {
+      display: none !important;
     }
-    .wpforms-submit{
-        margin: 0 auto !important;
+  }
+ 
+  
 
+
+ 
+  /*  Ajustement pour Tablette (769px - 1024px) */
+ /*  Masquer l'image sur Mobile (≤ 768px) */
+@media (max-width: 768px) {
+    .flower-image {
+      display: none !important;
     }
-}
+  }
+  
+  @media (max-width: 1024px) {
+    .flower-image {
+      display: none !important;
+    }
+  }
+  
+  
 
-
+  
+ 
+  
+ 
