@@ -536,35 +536,41 @@ display: none;
     #menu-primary-menu {
     display: none !important; /* Cache le menu principal */
   }
-}
-/* Masquer l'image sur les écrans inférieurs à 1024px */
-@media (max-width: 1024px) {
-    .elementor-23 .elementor-element.elementor-element-2ed67e0 img {
-      display: none !important;
-    }
+  .elementor-23 .elementor-element.elementor-element-2ed67e0 img {
+    display: none !important;
   }
- 
-  
+  .flower-image {
+    display: none !important;
+  }
+}
 
+ 
 
  
   /*  Ajustement pour Tablette (769px - 1024px) */
  /*  Masquer l'image sur Mobile (≤ 768px) */
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .flower-image {
       display: none !important;
     }
-  }
-  
-  @media (max-width: 1024px) {
-    .flower-image {
-      display: none !important;
+    .wpforms-container {
+        position: relative;
+      width: 90% !important; /* Prend 90% de la largeur de l'écran */
+      margin: 0 auto !important;
+      align-content: center !important;
+      margin-left: 60px;
     }
-  }
+    .wpforms-field-medium{
+        width: 80% !important;
+    }
+    
+    
   
-  
+   
+
 
   
- 
+}
+
   
  
