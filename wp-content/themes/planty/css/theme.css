@@ -553,24 +553,41 @@ display: none;
     .flower-image {
       display: none !important;
     }
+   
+    }
+    @media  (min-width:469px)and (max-width: 769px)   {    
+
+    
     .wpforms-container {
         position: relative;
       width: 90% !important; /* Prend 90% de la largeur de l'écran */
       margin: 0 auto !important;
       align-content: center !important;
-      margin-left: 60px;
+      margin-left: 200px !important;
     }
     .wpforms-field-medium{
-        width: 80% !important;
+        width: 90% !important;
     }
-    
-    
-  
    
+    }
 
+    @media  (min-width:400px)and (max-width: 599px)   {    
 
-  
-}
+    
+        .wpforms-container {
+            position: relative;
+          width: 90% !important; /* Prend 90% de la largeur de l'écran */
+          margin: 0 auto !important;
+          align-content: center !important;
+          margin-left: 80px !important;
+        }
+        .wpforms-field-medium{
+            width: 80% !important;
+        }
+       
+        }
+    
+
 
   
  
