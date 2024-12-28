@@ -555,18 +555,18 @@ display: none;
     }
    
     }
-    @media  (min-width:469px)and (max-width: 769px)   {    
+    @media  (min-width:600px)and (max-width: 769px)   {    
 
     
     .wpforms-container {
         position: relative;
-      width: 90% !important; /* Prend 90% de la largeur de l'écran */
+      width: 100% !important; /* Prend 90% de la largeur de l'écran */
       margin: 0 auto !important;
       align-content: center !important;
       margin-left: 200px !important;
     }
     .wpforms-field-medium{
-        width: 90% !important;
+        width: 100% !important;
     }
    
     }
